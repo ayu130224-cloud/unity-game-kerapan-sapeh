@@ -5,6 +5,7 @@ public class menu : MonoBehaviour
 {
     [Header("Main Panel")]
     public GameObject menuPanel;
+    public GameObject settingPanel;
     public GameObject materiPanel;
 
     [Header("Materi Panel")]
@@ -18,6 +19,7 @@ public class menu : MonoBehaviour
         // Panel awal
         menuPanel.SetActive(true);
         materiPanel.SetActive(false);
+        settingPanel.SetActive(false);
 
         // Materi awal
         sejarahPanel.SetActive(true);
@@ -32,6 +34,7 @@ public class menu : MonoBehaviour
         SceneManager.LoadScene(scenename);
     }
 
+
     // BUKA MATERI
     public void infoButton()
     {
@@ -39,11 +42,19 @@ public class menu : MonoBehaviour
         materiPanel.SetActive(true);
     }
 
+
+    public void settingButton()
+    {
+        menuPanel.SetActive(false);
+        settingPanel.SetActive(true);
+    }
+
     // KEMBALI KE MENU
     public void backButton()
     {
         menuPanel.SetActive(true);
         materiPanel.SetActive(false);
+        settingPanel.SetActive(false);
     }
 
     // KELUAR GAME
