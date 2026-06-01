@@ -7,6 +7,7 @@ public class menu : MonoBehaviour
     public GameObject menuPanel;
     public GameObject settingPanel;
     public GameObject materiPanel;
+    public GameObject loadingPanel;
 
     [Header("Materi Panel")]
     public GameObject sejarahPanel;
@@ -20,7 +21,7 @@ public class menu : MonoBehaviour
         menuPanel.SetActive(true);
         materiPanel.SetActive(false);
         settingPanel.SetActive(false);
-
+        loadingPanel.SetActive(false);
         // Materi awal
         sejarahPanel.SetActive(true);
         peralatanPanel.SetActive(false);
