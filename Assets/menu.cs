@@ -25,7 +25,9 @@ public class menu : MonoBehaviour
         // Materi awal
         sejarahPanel.SetActive(true);
         peralatanPanel.SetActive(false);
+
         peraturanPanel.SetActive(false);
+
         nilaiBudayaPanel.SetActive(false);
     }
 
@@ -70,9 +72,6 @@ public class menu : MonoBehaviour
         AudioListener.pause = !AudioListener.pause;
     }
 
-    // =========================
-    // BUTTON MATERI
-    // =========================
 
     public void ShowSejarah()
     {
